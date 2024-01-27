@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETFLIX - HOME</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="logo (1).png" alt="" />
+      </div>
+      <div class="divRight">
+        <div>
+          <span>unlimited tv shows and movies</span>
+        </div>
+        <button class="btn btn-1 btn-anim0">join now</button>
+        <button class="btn btn-2 btn-anim0">sign in</button>
+      </div>
+    </nav>
+
+    
+
+    <header id="banner">
+      <div id="banner_contents">
+        <h1 id="banner_title"></h1>
+
+        <div id="banner_buttons">
+          <button class="banner_button btn-anim">Play</button>
+          <button class="banner_button btn-anim">My List</button>
+        </div>
+        <p id="banner_description"></p>
+      </div>
+      <div id="banner_fadeBottom"></div>
+    </header>
+
+    <div id="head_row">
+      <div class="row">
+        <h2 class="row_title"></h2>
+        <div class="row_posters">
+          <div id="card"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        let nav = document.querySelector("nav");
+        nav.classList.toggle("active", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
